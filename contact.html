@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sample.Co., Ltd. contact</title>
+    <meta name="description" content="Sample.Co., Ltd. plans, designs, develops, operates and maintains computer information systems and sells software products.">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+    <link rel="stylesheet" href="./css/style.css">
+    
+    <!-- Adobe font -->
+    <link rel="stylesheet" href="https://use.typekit.net/drz0yty.css">
+
+    <!-- Google font -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- FontAwesome -->
+    <script src="https://kit.fontawesome.com/50da9b9db7.js" crossorigin="anonymous"></script>
+    
+</head>
+<body>
+
+
+    <!-- ヘッダー -->
+    <header class="header">
+        <a href="index.html" class="logo"><img src="./images/logo.png" alt="logo"><span style="font-family:'hero-new'">Sample</span></a>
+        <div id="nav-button" class="nav-button"><i class="material-icons">menu</i></div>
+        <!-- SPナビゲーション -->
+        <nav class="sp-nav">
+            <ul class="sp-nav-list">
+                <li><a href="service.html">Service</a></li>
+                <li><a href="news.html">News</a></li>
+                <li><a href="company.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <!-- PCナビゲーション -->
+        <nav class="pc-nav">
+            <ul class="pc-nav-list">
+                <li><a href="service.html">Service</a></li>
+                <li><a href="news.html">News</a></li>
+                <li><a href="company.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- メイン -->
+    <main>
+
+        <!-- カバー -->
+        <section class="sub-cover">
+            <h1 class="sub-cover-title">Contact</h1>
+        </section>
+
+        <!-- お問い合わせ -->
+        <section class="contact">
+            <div class="container">
+
+                <!-- メイン -->
+                <div class="main">
+                    <form>
+                        <div class="form-item">
+                            <label class="form-heading">お問い合わせ種類<span class="required">必須</span></label>
+                            <div class="form-radio">
+                                <input type="radio" id="radio_1" class="radio" name="radios">
+                                <label for="radio_1">サービスへのお申し込み</label>
+                            </div>
+                            <div class="form-radio">
+                                <input type="radio" id="radio_2" class="radio" name="radios">
+                                <label for="radio_2">サービスに関してのお問い合わせ</label>
+                            </div>
+                            <div class="form-radio">
+                                <input type="radio" id="radio_3" class="radio" name="radios">
+                                <label for="radio_3">取材のお申し込み</label>
+                            </div>
+                            <div class="form-radio">
+                                <input type="radio" id="radio_4" class="radio" name="radios">
+                                <label for="radio_4">その他お問い合わせ</label>
+                            </div>
+                        </div>
+                        <div class="form-item">
+                            <label for="name" class="form-heading">お名前<span class="required">必須</span></label>
+                            <input id="name"  type="text" placeholder="ご記入ください">
+                        </div>
+                        <div class="form-item">
+                            <label for="company" class="form-heading">会社名<span class="optional">必須</span></label>
+                            <input id="company" type="text" placeholder="ご記入ください">
+                        </div>
+                        <div class="form-item">
+                            <label for="mail" class="form-heading">メールアドレス<span class="required">必須</span></label>
+                            <input id="mail" type="text" placeholder="ご記入ください">
+                        </div>
+                        <div class="form-item">
+                            <label for="contact" class="form-heading">お問い合わせ内容<span class="required">必須</span></label>
+                            <textarea id="contact" placeholder="ご記入ください"></textarea>
+                        </div>
+                        <div class="form-submit">
+                            <p class="form-submit-text">
+                                内容を確認の上
+                                <br>
+                                「送信する」ボタンを押してください
+                            </p>
+                            <input class="button-submit" type="submit" value="送信する">
+                        </div>
+                    </form>
+                </div>
+
+                <!-- サイドバー -->
+                <div class="sidebar">
+                    <ul class="sidebar-banner">
+                        <li><a href="#"><img src="./images/banner.jpg" alt="バナー"></a></li>
+                        <li><a href="#"><img src="./images/banner.jpg" alt="バナー"></a></li>
+                        <li><a href="#"><img src="./images/banner.jpg" alt="バナー"></a></li>
+                    </ul>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+   <!-- フッター -->
+    <footer class="footer">
+         <div class="footer-body-sub">
+            <div class="footer-info-sub">
+                <div class="footer-logo">
+                    <a href="index.html" class="logo_center">
+                        <div class="footer-logo-mark"><img src="./images/logo.png" alt="logo"></div>
+                        <div class="footer-logo-text" style="font-family:'hero-new'">Sample</div>
+                    </a>
+                </div>
+                <address class="footer-address-sub">
+                    000 Abc Street, Melbourn VIC
+                    <br>
+                    03 0000 0000
+                </address>
+            <ul class="footer-sns">
+                <li><a href="https://twitter.com/TwitterJP" target="_blank"><i class="fab fa-twitter" aria-label="twitter"></i></a></li>
+                <li><a href="https://www.facebook.com/facebookappJapan/" target="_blank"><i class="fab fa-facebook-f" aria-label="facebook"></i></a></li>
+            </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            <small>Copyright 2021 Sample Co., Ltd. All Rights Reserved.</small>
+        </div>
+    </footer>
+
+    <!-- JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="./js/hamburger.js"></script>
+
+</body>
+</html>
