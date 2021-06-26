@@ -9,13 +9,12 @@
     <!-- CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
     <link rel="stylesheet" href="./css/style.css">
-    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="./images/favicon.png">
     <!-- Adobe font -->
     <link rel="stylesheet" href="https://use.typekit.net/drz0yty.css">
-
     <!-- Google font -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-
     <!-- FontAwesome -->
     <script src="https://kit.fontawesome.com/50da9b9db7.js" crossorigin="anonymous"></script>
     
@@ -30,7 +29,7 @@
         <!-- SPナビゲーション -->
         <nav class="sp-nav">
             <ul class="sp-nav-list">
-                <li><a href="service.html">Service</a></li>
+                <li><a href="service.html">Services</a></li>
                 <li><a href="news.html">News</a></li>
                 <li><a href="company.html">About</a></li>
                 <li><a href="contact.html">Contact</a></li>
@@ -39,7 +38,7 @@
         <!-- PCナビゲーション -->
         <nav class="pc-nav">
             <ul class="pc-nav-list">
-                <li><a href="service.html">Service</a></li>
+                <li><a href="service.html">Services</a></li>
                 <li><a href="news.html">News</a></li>
                 <li><a href="company.html">About</a></li>
                 <li><a href="contact.html">Contact</a></li>
@@ -56,54 +55,55 @@
         </section>
 
         <!-- お問い合わせ -->
+        <section class="sub_main-header-discription">
+            <p class="sub_main-header-text">
+            Are you looking for more information about our services and pricing? 
+            </p>
+            <p class="sub_main-header-text">
+            Fill out the form below and we'll get back to you as quickly as possible to arrange a free consultation!
+            </p>
+        </section>
         <section class="contact">
             <div class="container">
 
                 <!-- メイン -->
                 <div class="main">
                     <form>
+                        <div class="privacy-policy">
+                            <h3 class="terms-heading">Privacy Policy</h3>
+                            <p class="privacy-policy-terms">
+                                1. Personal information collected from you will be handled in accordance with our Privacy Policy available on this website.
+                            </p>
+                            <p class="privacy-policy-terms">
+                                2. The Privacy Policy explains how we manage your personal information in accordance with the National Privacy Principles in the Privacy Act 1988 Cth.
+                            </p>
+                            <p class="privacy-policy-terms">
+                                3. Inquiries received on weekends or public holidays will be addressed the following business day.
+                            </p>
+                        </div>
+                        <div class=agreement-checkbox>
+                            <input id="agreement" type="checkbox" name="checkbox">
+                            <label for="agreement" class="agree">I agree with these terms</label>
+                        </div>
+                        <p class="required-field" >*<span>= Required field</span></p>
                         <div class="form-item">
-                            <label class="form-heading">お問い合わせ種類<span class="required">必須</span></label>
-                            <div class="form-radio">
-                                <input type="radio" id="radio_1" class="radio" name="radios">
-                                <label for="radio_1">サービスへのお申し込み</label>
-                            </div>
-                            <div class="form-radio">
-                                <input type="radio" id="radio_2" class="radio" name="radios">
-                                <label for="radio_2">サービスに関してのお問い合わせ</label>
-                            </div>
-                            <div class="form-radio">
-                                <input type="radio" id="radio_3" class="radio" name="radios">
-                                <label for="radio_3">取材のお申し込み</label>
-                            </div>
-                            <div class="form-radio">
-                                <input type="radio" id="radio_4" class="radio" name="radios">
-                                <label for="radio_4">その他お問い合わせ</label>
-                            </div>
+                            <label for="name" class="form-heading">Name<span class="required">*</span></label>
+                            <input id="name"  type="text">
                         </div>
                         <div class="form-item">
-                            <label for="name" class="form-heading">お名前<span class="required">必須</span></label>
-                            <input id="name"  type="text" placeholder="ご記入ください">
+                            <label for="company" class="form-heading">Company Name</label>
+                            <input id="company" type="text">
                         </div>
                         <div class="form-item">
-                            <label for="company" class="form-heading">会社名<span class="optional">必須</span></label>
-                            <input id="company" type="text" placeholder="ご記入ください">
+                            <label for="mail" class="form-heading">Email Adress<span class="required">*</span></label>
+                            <input id="mail" type="text">
                         </div>
                         <div class="form-item">
-                            <label for="mail" class="form-heading">メールアドレス<span class="required">必須</span></label>
-                            <input id="mail" type="text" placeholder="ご記入ください">
-                        </div>
-                        <div class="form-item">
-                            <label for="contact" class="form-heading">お問い合わせ内容<span class="required">必須</span></label>
-                            <textarea id="contact" placeholder="ご記入ください"></textarea>
+                            <label for="contact" class="form-heading">Message<span class="required">*</span></label>
+                            <textarea id="contact"></textarea>
                         </div>
                         <div class="form-submit">
-                            <p class="form-submit-text">
-                                内容を確認の上
-                                <br>
-                                「送信する」ボタンを押してください
-                            </p>
-                            <input class="button-submit" type="submit" value="送信する">
+                            <input class="button-submit" type="submit" value="submit">
                         </div>
                     </form>
                 </div>
@@ -111,9 +111,9 @@
                 <!-- サイドバー -->
                 <div class="sidebar">
                     <ul class="sidebar-banner">
-                        <li><a href="#"><img src="./images/banner.jpg" alt="バナー"></a></li>
-                        <li><a href="#"><img src="./images/banner.jpg" alt="バナー"></a></li>
-                        <li><a href="#"><img src="./images/banner.jpg" alt="バナー"></a></li>
+                        <li><a href="#"><img src="./images/banner.jpg" alt="banner"></a></li>
+                        <li><a href="#"><img src="./images/banner.jpg" alt="banner"></a></li>
+                        <li><a href="#"><img src="./images/banner.jpg" alt="banner"></a></li>
                     </ul>
                 </div>
 
