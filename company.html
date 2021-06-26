@@ -9,13 +9,12 @@
     <!-- CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
     <link rel="stylesheet" href="./css/style.css">
-    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="./images/favicon.png">
     <!-- Adobe font -->
     <link rel="stylesheet" href="https://use.typekit.net/drz0yty.css">
-
     <!-- Google font -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-
     <!-- FontAwesome -->
     <script src="https://kit.fontawesome.com/50da9b9db7.js" crossorigin="anonymous"></script>
     
@@ -30,7 +29,7 @@
         <!-- SPナビゲーション -->
         <nav class="sp-nav">
             <ul class="sp-nav-list">
-                <li><a href="service.html">Service</a></li>
+                <li><a href="service.html">Services</a></li>
                 <li><a href="news.html">News</a></li>
                 <li><a href="company.html">About</a></li>
                 <li><a href="contact.html">Contact</a></li>
@@ -39,7 +38,7 @@
         <!-- PCナビゲーション -->
         <nav class="pc-nav">
             <ul class="pc-nav-list">
-                <li><a href="service.html">Service</a></li>
+                <li><a href="service.html">Services</a></li>
                 <li><a href="news.html">News</a></li>
                 <li><a href="company.html">About</a></li>
                 <li><a href="contact.html">Contact</a></li>
@@ -56,6 +55,17 @@
         </section>
 
         <!-- 会社概要 -->
+        <section class="sub_main-header-discription">
+            <p class="sub_main-header-text">
+                During the challenging times, it's never been more important for businesses to advertise themselves in a cost-effective manner. 
+                <p class="sub_main-header-text">
+                    With a hunger to help businesses succeed and 10+years of experience in the web & software development, management and digital marketing realms, we provide affordable, cost-effective services for small or start-up businesses.
+                </p>
+            </p>
+            <div class="button-container-mutual">
+                <a href="#"><button class="button-mutual">Consult with Us</button></a>
+            </div>
+        </section>
         <section class="company">
             <div class="container">
 
@@ -143,9 +153,9 @@ googleMap();
                 <!-- サイドバー -->
                 <div class="sidebar">
                     <ul class="sidebar-banner">
-                        <li><a href="#"><img src="./images/banner.jpg" alt="バナー"></a></li>
-                        <li><a href="#"><img src="./images/banner.jpg" alt="バナー"></a></li>
-                        <li><a href="#"><img src="./images/banner.jpg" alt="バナー"></a></li>
+                        <li><a href="#"><img src="./images/banner.jpg" alt="banner"></a></li>
+                        <li><a href="#"><img src="./images/banner.jpg" alt="banner"></a></li>
+                        <li><a href="#"><img src="./images/banner.jpg" alt="banner"></a></li>
                     </ul>
                 </div>
 
@@ -154,32 +164,53 @@ googleMap();
 
     </main>
 
-    <!-- フッター -->
+    <!-- footer -->
     <footer class="footer">
-         <div class="footer-body-sub">
-            <div class="footer-info-sub">
-                <div class="footer-logo">
-                    <a href="index.html" class="logo_center">
-                        <div class="footer-logo-mark"><img src="./images/logo.png" alt="logo"></div>
-                        <div class="footer-logo-text" style="font-family:'hero-new'">Sample</div>
-                    </a>
+        <div class="footer-body">
+            <!-- SNS -->
+            <div class="sns-container">
+                <div class="section-heading">
+                    <h2 class="section-title">Twitter</h2>
                 </div>
-                <address class="footer-address-sub">
-                    000 Abc Street, Melbourn VIC
-                    <br>
-                    03 0000 0000
-                </address>
-            <ul class="footer-sns">
-                <li><a href="https://twitter.com/TwitterJP" target="_blank"><i class="fab fa-twitter" aria-label="twitter"></i></a></li>
-                <li><a href="https://www.facebook.com/facebookappJapan/" target="_blank"><i class="fab fa-facebook-f" aria-label="facebook"></i></a></li>
-            </ul>
+                <div class="sns-box">
+                    <div class="sns-item">
+                        <a class="twitter-timeline" data-width="335" data-height="500" href="https://twitter.com/TwitterAU?ref_src=twsrc%5Etfw">Tweets by TwitterAU</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                    </div>
+                </div>
+            </div>
+            <!-- contact -->
+            <div class="contact-container">
+                <div class="section-heading">
+                    <h2 class="section-title">Contact</h2>
+                </div>
+                <div class="footer-contact">
+                    <p class= "footer-contact-lead">Got questions? Just drop us a note and we will get back to you as soon as possible!</p>
+                    <a href="contact.html"><button class="button-mutual">Get in touch</button></a>
+                </div>
+                <div class="footer-info">
+                    <div class="footer-logo">
+                        <a href="index.html" class="logo_center">
+                            <div class="footer-logo-mark"><img src="./images/logo.png" alt="logo"></div>
+                            <div class="footer-logo-text" style="font-family:'hero-new'">Sample</div>
+                        </a>
+                    </div>
+                    <address class="footer-address">
+                        00 Abc Street Melbourne VIC 0000
+                        <br>
+                        03 0000 0000
+                    </address>
+                    <ul class="footer-sns">
+                        <li><a href="https://twitter.com/TwitterJP" target="_blank"><i class="fab fa-twitter" aria-label="twitter"></i></a></li>
+                        <li><a href="https://www.facebook.com/facebookappJapan/" target="_blank"><i class="fab fa-facebook-f" aria-label="facebook"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <small>Copyright 2021 Sample Co., Ltd. All Rights Reserved.</small>
             </div>
         </div>
-        <div class="copyright">
-            <small>Copyright 2021 Sample Co., Ltd. All Rights Reserved.</small>
-        </div>
     </footer>
-
+    
     <!-- JS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="./js/hamburger.js"></script>
