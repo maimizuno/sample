@@ -17,7 +17,9 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!-- FontAwesome -->
     <script src="https://kit.fontawesome.com/50da9b9db7.js" crossorigin="anonymous"></script>
-    
+    <!-- icomoon -->
+    <link rel="stylesheet" href="https://i.icomoon.io/public/temp/4a4b2a425f/UntitledProject/style.css">
+
 </head>
 <body>
 
@@ -55,98 +57,59 @@
         </section>
 
         <!-- 会社概要 -->
-        <section class="sub_main-header-discription">
-            <p class="sub_main-header-text">
-                During the challenging times, it's never been more important for businesses to advertise themselves in a cost-effective manner. 
-                <p class="sub_main-header-text">
-                    With a hunger to help businesses succeed and 10+years of experience in the web & software development, management and digital marketing realms, we provide affordable, cost-effective services for small or start-up businesses.
-                </p>
-            </p>
+        <div class="sub_main-header-discription">
+            <p class="sub_main-header-text1">During the challenging times, it's never been more important for businesses to advertise themselves in a cost-effective manner.</p>
+            <p class="sub_main-header-text2">With a hunger to help businesses succeed and 10+years of experience in the web & software development, management and digital marketing realms, we provide affordable, cost-effective services for small or start-up businesses.</p>
             <div class="button-container-mutual">
-                <a href="#"><button class="button-mutual">Consult with Us</button></a>
+                <a href="contact.html" class="button-mutual">Consult with Us</a>
             </div>
-        </section>
+        </div>
         <section class="company">
             <div class="container">
 
                 <!-- メイン -->
                 <div class="main">
-                    <table class="company-table">
-                        <tbody>
-                            <tr>
-                                <th>会社名</th>
-                                <td>株式会社サンプル</td>
-                            </tr>
-                            <tr>
-                                <th>設立</th>
-                                <td>2020年4月1日</td>
-                            </tr>
-                            <tr>
-                                <th>資本金</th>
-                                <td>1000万円</td>
-                            </tr>
-                            <tr>
-                                <th>代表取締役</th>
-                                <td>煌木 太郎</td>
-                            </tr>
-                            <tr>
-                                <th>事業内容</th>
-                                <td>
-                                    Webサイト構築
-                                    <br>
-                                    スマホアプリ開発
-                                    <br>
-                                    サービス改善事業
-                                    <br>
-                                    新規事業開発
-                                </td>
-                            </tr>
-                            <tr>
-                                <th>所在地</th>
-                                <td>東京都渋谷区渋谷1-1000</td>
-                            </tr>
-                            <tr>
-                                <th>最寄駅</th>
-                                <td>渋谷駅</td>
-                            </tr>
-                        </tbody>
-                    </table>
-
-                    <div id="google_map" class="google-map"></div>
-                    <script src="//maps.googleapis.com/maps/api/js?key=AIzaSyCkX5wwTIM5yiCBLB14H9D4B9q61wc-5d8"></script>
-                    <script>
-                    function googleMap() {
-                    var latlng = new google.maps.LatLng(-37.803635,144.952653); /* 座標 */
-                    var myOptions = {
-                    zoom: 16, /* 拡大比率 */
-center: latlng,
-mapTypeControlOptions: { mapTypeIds: ['style', google.maps.MapTypeId.ROADMAP] }
-};
-var map = new google.maps.Map(document.getElementById('google_map'), myOptions);
-var markerOptions = {
-position: latlng,
-map: map,
-title: 'Sample.Co.,Ltd', /* タイトル */
-animation: google.maps.Animation.DROP /* アニメーション */
-};
-var marker = new google.maps.Marker(markerOptions);
-/* 取得スタイルの貼り付け */
-var styleOptions = [
-{
-"stylers": [
-{ "hue": '#8A2DD9' }
-]
-}
-];
-var styledMapOptions = { name: 'Sample.Co.,Ltd' } /* 地図右上のタイトル */
-var sampleType = new google.maps.StyledMapType(styleOptions, styledMapOptions);
-map.mapTypes.set('style', sampleType);
-map.setMapTypeId('style');
-};
-google.maps.event.addDomListener(window, 'load', function() {
-googleMap();
-});
-</script>
+                    <div class="sub_section-heading">
+                        <h2 class="section-title">Our Services</h2>
+                    </div>
+                    <div class="our-services-container">
+                        <div class="our-services-item">
+                            <span class="icon-iconmonstr-globe-1"></span>
+                            <h3 class="our-services-title">Website</h3>
+                            <p class="our-services-text">Mobile-friendly website design</p>
+                        </div>
+                        <div class="our-services-item">
+                            <span class="icon-iconmonstr-smartphone-12"></span>
+                            <h3 class="our-services-title">Mobile App</h3>
+                            <p class="our-services-text">Domain-specific mobile solutions</p>
+                        </div>
+                        <div class="our-services-item">
+                            <span class="icon-iconmonstr-marketing-11"></span>
+                            <h3 class="our-services-title">Marketing</h3>
+                            <p class="our-services-text">Digital marketing solutions</p>
+                        </div>
+                        <div class="our-services-item">
+                            <span class="icon-iconmonstr-thumb-10"></span>
+                            <h3 class="our-services-title">Social</h3>
+                            <p class="our-services-text">Social media management & ads</p>
+                        </div>
+                    </div>
+                    <div class="button-container-ourservices">                       
+                        <a href="contact.html" class="button-ourservices">Services</a>                    
+                    </div>
+                    <!-- pricing -->
+                    <div class="sub_section-heading">
+                        <h2 class="section-title">Pricing</h2>
+                    </div>
+                    <p class="pricing-discription">
+                        Every website is different, and our affordable design and development packages are priced individually, depending on your unique needs. That means you'll never pay for more than you need!
+                    </p>
+                    <p class="pricing-discription">
+                        We carefully put together a selection of flat-rate packages across the various services we offer, making it simple and easy to understand what you'll be spending up-front. 
+                    </p>
+                    <div class="button-container-company">
+                        <a href="contact.html" class="button-pricing">Conact Us</a>
+                    </div>
 
                 </div>
 
@@ -185,7 +148,7 @@ googleMap();
                 </div>
                 <div class="footer-contact">
                     <p class= "footer-contact-lead">Got questions? Just drop us a note and we will get back to you as soon as possible!</p>
-                    <a href="contact.html"><button class="button-mutual">Get in touch</button></a>
+                    <a href="contact.html" class="button-mutual">Get in touch</a>
                 </div>
                 <div class="footer-info">
                     <div class="footer-logo">
