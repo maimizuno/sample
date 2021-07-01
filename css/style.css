@@ -2177,8 +2177,8 @@ button {
 @media (min-width: 1025px) {
   .button-ourservices {
     padding: 2.5rem 10rem;
-    -webkit-box-shadow: 0 0 0 4px #132b4df0, 0 0 0 5px #8A2DD9;
-            box-shadow: 0 0 0 4px #132b4df0, 0 0 0 5px #8A2DD9;
+    -webkit-box-shadow: 0 0 0 4px #183f6b, 0 0 0 5px #8A2DD9;
+            box-shadow: 0 0 0 4px #183f6b, 0 0 0 5px #8A2DD9;
   }
   .button-ourservices:hover {
     -webkit-transition-duration: 0.5s;
@@ -2298,6 +2298,7 @@ button {
   .team-member {
     width: 25%;
     padding: 1rem 3rem 0 0;
+    margin: 0;
   }
 }
 
@@ -2330,7 +2331,7 @@ button {
           box-sizing: border-box;
   padding-top: 0;
   padding-bottom: 0;
-  background: -webkit-linear-gradient(-90deg, #271d5e8f, #18406F, #257388);
+  background: -webkit-linear-gradient(-90deg, #180a4d44, #18406F, #257388);
 }
 
 @media (min-width: 768px) {
