@@ -46,10 +46,6 @@ h3 {
   }
 }
 
-button {
-  cursor: pointer;
-}
-
 .header {
   position: fixed;
   top: 0;
@@ -117,7 +113,8 @@ button {
 }
 
 .icon-menu:before {
-  content: "\e907";
+  content: "\e901";
+  font-size: 2rem;
 }
 
 .nav-button {
@@ -1883,11 +1880,11 @@ button {
 }
 
 .icon-twitter:before {
-  content: "\e906";
+  content: "\e900";
 }
 
-.icon-facebook-brand:before {
-  content: "\e924";
+.icon-facebook:before {
+  content: "\e902";
 }
 
 .footer-body-sub {
@@ -2092,7 +2089,7 @@ button {
 }
 
 .our-services-title {
-  margin: 1.5rem 0 0.5rem;
+  margin: 1rem 0 0.5rem;
   font-size: 2rem;
   text-transform: uppercase;
   color: #43d9bd;
@@ -2116,20 +2113,20 @@ button {
   }
 }
 
-.icon-web:before {
-  content: "\e903";
+.icon-website:before {
+  content: "\e907";
 }
 
 .icon-mobile:before {
-  content: "\e905";
+  content: "\e906";
 }
 
 .icon-marketing:before {
   content: "\e904";
 }
 
-.icon-social:before {
-  content: "\e900";
+.icon-socialmedia:before {
+  content: "\e905";
 }
 
 .button-container-ourservices {
@@ -2459,7 +2456,7 @@ button {
 }
 
 .button-submit {
-  padding: 2rem 7rem;
+  padding: 1.7rem 7rem;
   font-size: 1.7rem;
   font-weight: 500;
   text-transform: uppercase;
@@ -2479,14 +2476,20 @@ button {
 @media (min-width: 768px) {
   .button-submit {
     font-size: 2rem;
-    padding: 2.2rem 10.5rem;
     -webkit-box-shadow: 0 0 0 4px #257288bb, 0 0 0 5px #8A2DD9;
             box-shadow: 0 0 0 4px #257288bb, 0 0 0 5px #8A2DD9;
   }
 }
 
+@media (min-width: 900px) {
+  .button-submit {
+    padding: 2rem 8rem;
+  }
+}
+
 @media (min-width: 1025px) {
   .button-submit {
+    padding: 2.5rem 10rem;
     cursor: pointer;
   }
   .button-submit:hover {
