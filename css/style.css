@@ -302,8 +302,8 @@ h3 {
     top: 0;
     left: 0;
     width: 100%;
-    -o-object-fit: unset;
-       object-fit: unset;
+    -o-object-fit: contain;
+       object-fit: contain;
     height: auto;
   }
 }
@@ -313,6 +313,9 @@ h3 {
   top: 0;
   left: 0;
   width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  height: auto;
 }
 
 @media (min-width: 768px) {

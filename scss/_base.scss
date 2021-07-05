@@ -1,0 +1,59 @@
+//
+// ベースのスタイル
+//
+
+
+// 変数
+$white: #fff;
+$navy: #11152C;
+$navy2: #18264E;
+$navy3: #214a96bd;
+$light-gray: #e8e8e8;
+$gray: #777777;
+$dark-gray: #222222;
+$green: #49f2c2;
+$green2: #43d9bd;
+$purple: #8A2DD9;
+
+// アニメーション
+$defaultDuration: .5s;
+
+// ベーススタイル
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'arboria', sans-serif;
+    font-size: 1.4rem;
+    font-weight: 500;
+    font-style: normal;
+    letter-spacing: .07em;
+    line-height: 1.75;
+    color: $light-gray;
+    background-color: $navy;
+    @media (min-width: 768px) {
+        font-size: 1.6rem;
+    }
+}
+
+a {
+    color: $light-gray;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+img {
+    max-width: 100%;
+    vertical-align: bottom;
+}
+
+h3 {
+    font-size: 1.7rem;
+    font-weight: 600;
+    line-height: 1.6;
+    color: $light-gray;
+    @media (min-width: 768px) {
+        font-size: 2.6rem;
+    }
+}

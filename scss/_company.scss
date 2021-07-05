@@ -1,0 +1,213 @@
+//
+// about
+//
+
+
+.company {
+    padding: 0;
+    background: -webkit-linear-gradient(-90deg, #180a4d44, #18406F, #257388);
+    @media (min-width: 768px) {
+        padding: 8rem 5rem;
+    }
+}
+
+.our-services-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top: 2rem;
+    box-sizing: border-box;
+}
+
+.our-services-item {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding-bottom: 3rem;
+    box-sizing: border-box;
+    span {
+        font-size: 5rem;
+        background: -webkit-linear-gradient(45deg, #9015d8, #3273C7, #35BA95);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    @media (min-width: 768px) {
+        width: 25%;
+        padding-right: 3rem;
+    }
+}
+
+.our-services-title {
+    margin: 1rem 0 0.5rem;
+    font-size: 2rem;
+    text-transform: uppercase;
+    color: $green2;
+    @media (min-width: 1025px) {
+        font-size: 2.6rem;
+    }
+}
+
+.our-services-text {
+    margin: 0;
+    text-align: center;
+    line-height: 2.2rem;
+    @media (min-width: 1025px) {
+        font-size: 1.8rem;
+    }
+}
+
+.icon-website:before {
+    content: "\e907";
+}
+
+.icon-mobile:before {
+    content: "\e906";
+}
+
+.icon-marketing:before {
+    content: "\e904";
+}
+
+.icon-socialmedia:before {
+    content: "\e905";
+}
+
+
+.button-container-ourservices {
+    display: flex;
+    justify-content: center;
+    padding: 1rem 0 3rem;
+    @media (min-width: 768px) {
+        padding: 2rem 0 5rem;
+    }
+}
+
+.button-ourservices {
+    padding: 1.7rem 7rem;
+    font-size: 1.7rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #48F2C3;
+    background: -webkit-linear-gradient(0deg, #36c097, #22b1ea, #3B1BEB);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-color: $navy;
+    border: 1px solid $purple;
+    border-radius: 5rem;
+    box-shadow: 0 0 0 4px #031b36ad, 0 0 0 5px #8A2DD9;
+    box-sizing: border-box;
+    margin: 1rem 0 3rem;
+    @media (min-width: 768px) {
+        padding: 2rem 8rem;
+        font-size: 2rem;
+    }
+    @media (min-width: 1025px) {
+        padding: 2.5rem 10rem;
+        box-shadow: 0 0 0 4px #183f6b, 0 0 0 5px #8A2DD9;
+        &:hover {
+            transition-duration: $defaultDuration;
+            background: -webkit-linear-gradient(45deg, #9015d8, #3273C7, #35BA95);
+            -webkit-background-clip: unset;
+            -webkit-text-fill-color: unset;
+            opacity: 90%;
+            color: $white;
+        }
+    }
+}
+
+//pricing
+.pricing-discription {
+    font-size: 1.6rem;
+    font-weight: 600;
+    margin-top: 1rem;
+    @media (min-width: 1025px) {
+        font-size: 1.8rem;
+        width: 95%;
+    }
+}
+
+.button-container-company {
+    display: flex;
+    justify-content: center;
+    padding: 2rem 0 6rem;
+    @media (min-width: 768px) {
+        padding: 3rem 0 8rem;
+    }
+}
+
+.button-pricing {
+    padding: 1.7rem 7rem;
+    font-size: 1.7rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #48F2C3;
+    background: -webkit-linear-gradient(0deg, #36c097, #22b1ea, #3B1BEB);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-color: $navy;
+    border: 1px solid $purple;
+    border-radius: 5rem;
+    box-shadow: 0 0 0 4px #173561, 0 0 0 5px #8A2DD9;
+    box-sizing: border-box;
+    @media (min-width: 768px) {
+        padding: 2rem 8rem;
+        font-size: 2rem;
+    }
+    @media (min-width: 1025px) {
+        padding: 2.5rem 10rem;
+        box-shadow: 0 0 0 4px #1e4974, 0 0 0 5px #8A2DD9;
+        &:hover {
+            transition-duration: $defaultDuration;
+            background: -webkit-linear-gradient(45deg, #9015d8, #3273C7, #35BA95);
+            -webkit-background-clip: unset;
+            -webkit-text-fill-color: unset;
+            opacity: 90%;
+            color: $white;
+        }
+    }
+}
+
+//team
+.team-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0 0 8rem;
+}
+
+.team-member {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    margin: 0 2rem 2rem 0;
+    width: calc((100% - 2rem)/2);
+    &:nth-child(even) {
+        margin-right: 0;
+    }
+    @media (min-width: 769px) {
+        width: 25%;
+        padding: 1rem 3rem 0 0;
+        margin: 0;
+    }
+}
+
+.member-title {
+    line-height: 1.6rem;
+    font-weight: 600;
+    margin: 1rem 0 0 0;
+    color: $white;
+    @media (min-width: 769px) {
+        font-size: 1.8rem;
+        line-height: 1.8rem;
+    }
+}
+
+.member-name {
+    margin: 0;
+    @media (min-width: 769px) {
+        font-size: 1.8rem;
+    }
+}

@@ -1,0 +1,237 @@
+//
+// サービスのスタイル
+//
+
+.service {
+    width: 100%;
+    background: -webkit-linear-gradient(-90deg, #11152C, #18406F, #257388);
+    box-sizing: border-box;
+    padding: 3rem 0;
+    @media (min-width: 768px) {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 5rem;
+    }
+}
+
+.service-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0 2rem;
+    margin: 0 auto;
+    box-sizing: border-box;
+    max-width: 100%;
+    @media  (min-width: 768px) {
+        padding: 0;
+    }    
+    @media  (min-width: 1025px) {
+        flex-direction: row;
+        padding: 0;
+        margin: 0;
+        justify-content: flex-end;
+        width: 80%;
+    }
+}
+
+.service-item {
+    display: flex;
+    margin: 0 auto 2rem;
+    box-sizing: border-box;
+    @media (min-width: 768px) {
+        justify-content: flex-end;
+        margin: 0 0 3rem;
+    }
+}
+
+.service-body {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: flex-start;
+    justify-content: space-between;
+    background-color: $navy;
+    box-sizing: border-box;
+    padding: 1rem 2rem 1rem;
+    @media (min-width: 768px) {
+        font-size: 2rem;
+        width: 530px;
+        padding: 2rem 3rem 2rem;
+    }
+}
+
+.service-title {
+    width: 100%;
+    margin: 0;
+    font-size: 2.1rem;
+    line-height: 1.2;
+    color: $green2;
+    box-sizing: inherit;
+    span {
+        width: 100%;
+        color: $light-gray;
+        font-size: 1.5rem;
+        opacity: 0;
+        animation: fadein .5s ease forwards;
+    }
+    @media (min-width: 768px) {
+        font-size: 3.6rem;
+        span {
+            font-size: 2.6rem;
+        }
+    }
+}
+
+.service-link {
+    margin: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.service-arrow {
+    width: 2.4rem;
+    height: auto;
+    padding-right: 1rem;
+    @media (min-width: 768px) {
+        width: 3rem;
+        padding-right: 2rem;
+    }
+}
+
+.service-text {
+   display: inline-block;
+   color: $green2;
+   margin: 0;
+   font-size: 1.6rem;
+   @media (min-width: 768px) {
+        font-size: 2.4rem;
+    }
+}
+
+.service-img-box {
+     @media (min-width: 1025px) {
+        width: 400px !important;
+    }
+}
+
+.service-image_sp {
+    width: 250px;
+    @media (min-width: 768px) {
+        display: none !important;
+    }
+}
+
+.service-image_pc {
+    display: none;
+    @media (min-width: 768px) {
+        display: block;
+        width: 100%;
+    }
+}
+
+//sub
+//
+//
+
+.service-sub {
+    width: 100%;
+    padding: 0;
+    background: -webkit-linear-gradient(-90deg, #133e6ef1, #257388, #3ecfa6);
+    box-sizing: border-box;
+    @media (min-width: 768px) {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 5rem 5rem 2rem;
+    }
+}
+
+.service-item-containter_sub {
+    display: flex;
+    width: 100%;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    margin: 0 auto 2rem;
+    box-sizing: border-box;
+    @media (min-width: 768px) {
+        margin: 0;
+        margin-right: 0;
+    }
+}
+
+.service-item_sub {
+    padding-bottom: 2rem;
+    @media (min-width: 768px) {
+        padding-bottom: 3rem;
+    }
+    @media (min-width: 1025px) {
+        width: 50%;
+        padding-right: 3rem;
+        padding-bottom: 3rem;
+        box-sizing: border-box;
+    }
+}
+
+.service-body_sub {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    align-items: flex-start;
+    justify-content: space-between;
+    box-sizing: border-box;
+    background-color: $navy;
+    @media (min-width: 768px) {
+        font-size: 2rem;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+}
+
+.sub-service-image-area {
+    width: 100%;
+    height: 50vw;
+    overflow: hidden;
+    @media (min-width: 768px) {
+        height: 35vw;
+    }
+    @media (min-width: 1025px) {
+        height: 21vw;
+    }
+}
+
+.text-area-service-sub {
+    padding: 2rem;
+    @media (min-width: 768px) {
+        width: 100%;
+        height: 300px;
+        padding: 2rem 3rem;
+        background-color: $navy;
+        box-sizing: border-box;
+    }
+    @media (min-width: 1025px) {
+        height: 300px;
+    }
+}
+
+.service-text-area-lead {
+    font-size: 1.5rem;
+    padding: 0;
+    text-align: jusify;
+    margin-bottom: 0;
+    @media (min-width: 768px) {
+        font-size: 1.8rem;
+    }
+}
+
+.sub_service-link {
+    margin: 0 0 2rem 2rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+}

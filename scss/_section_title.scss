@@ -1,0 +1,113 @@
+//
+// セクションタイトルのスタイル
+//
+
+
+.section-heading {
+    text-align: center;
+    text-transform: uppercase;
+    @media (min-width: 768px) {
+        text-align: left;
+    }
+    @media (min-width: 1025px) {
+        width: 20%;
+    }
+}
+
+.section-title {
+    margin: 0 0 2rem;
+    font-size: 2.8rem;
+    font-weight: 700;
+    line-height: 1;
+    letter-spacing: 0.1em;
+    color: $white;
+    @media (min-width: 768px) {
+        padding: 0;
+        margin-bottom: 3rem;
+        font-size: 3.6rem;
+    }
+    @media (min-width: 1300px) {
+        padding: 0;
+        margin-bottom: 2rem;
+        font-size: 4.2rem;
+    }
+}
+
+//sub
+
+.sub_section-heading {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: .1em;
+    @media (min-width: 768px) {
+        text-align: left;
+    }
+    @media (min-width: 1025px) {
+        padding-bottom: 0.05rem;
+    }
+}
+
+.sub_main-header-discription {
+    font-size: 1.6rem;
+    font-weight: 600;
+    background-color: $navy;
+    padding: 2rem;
+    margin-top: 1.5rem;
+    @media (min-width: 768px) {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 5rem;
+        margin-top: 0;
+        font-size: 2.2rem;
+    }
+}
+.sub_main-header-text1 {
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+    opacity: 0;
+    animation: fadein 4s ease forwards;
+    @keyframes fadein {
+        100% {  opacity: 1;}
+    }
+    animation-delay: 1s;
+    @media (min-width: 768px) {
+        margin-bottom: 2rem;
+        text-align: center;
+        width: 60%;
+    }
+}
+
+.sub_main-header-text2 {
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+    opacity: 0;
+    animation: fadein 4s ease forwards;
+    @keyframes fadein {
+        100% {  opacity: 1;}
+    }
+    animation-delay: 1.5s;
+    @media (min-width: 768px) {
+        margin-bottom: 2rem;
+        text-align: center;
+        width: 60%;
+    }
+}
+
+.sub_main-header-text3 {
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+    opacity: 0;
+    animation: fadein 4s ease forwards;
+    @keyframes fadein {
+        100% {  opacity: 1;}
+    }
+    animation-delay: 2s;
+    @media (min-width: 768px) {
+        margin-bottom: 2rem;
+        text-align: center;
+        width: 60%;
+    }
+}

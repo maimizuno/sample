@@ -1,0 +1,28 @@
+//
+// サイドバーのスタイル
+//
+
+
+.sidebar {
+    @media (min-width: 768px) {
+        width: 30%;
+        padding-left: 9rem;
+        text-align: right;
+        box-sizing: border-box;
+    }
+}
+
+.sidebar-banner {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    li {
+        margin-bottom: 2rem;
+        @media (min-width: 768px) {
+            margin-bottom: 3rem;
+        }
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}
