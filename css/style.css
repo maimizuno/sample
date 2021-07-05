@@ -114,7 +114,9 @@ h3 {
 
 .icon-menu:before {
   content: "\e901";
-  font-size: 2rem;
+  font-size: 1.8rem;
+  vertical-align: middle;
+  line-height: 2;
 }
 
 .nav-button {
@@ -1842,8 +1844,8 @@ h3 {
   margin: 0;
   font-size: 2.1rem;
   background: -webkit-linear-gradient(0deg, #5815D8, #3273C7, #35BA95);
-  -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
   border: 1px solid #8A2DD9;
   border-radius: 50%;
 }
