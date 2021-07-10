@@ -126,6 +126,10 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    transition-duration: $defaultDuration;
+    &:hover {
+        transform: scale(1.1);
+    }
 }
 
 .box-news-text-area {

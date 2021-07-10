@@ -103,16 +103,31 @@
 }
 
 .service-text {
-   display: inline-block;
-   color: $green2;
-   margin: 0;
-   font-size: 1.6rem;
-   @media (min-width: 768px) {
-        font-size: 2.4rem;
+    display: inline-block;
+    color: $green2;
+    margin: 0;
+    font-size: 1.6rem;
+    &:hover {
+        -webkit-animation: zoom .4s;
+        animation: zoom .4s;
     }
-}
+    @-webkit-keyframes zoom {
+        50% {
+            -webkit-transform: scale(1.05);
+        }
+    }
+    @keyframes zoom {
+        50% {
+        transform: scale(1.05);
+        }
+    }
+    @media (min-width: 768px) {
+        font-size: 2.4rem;
+        }
+    }
 
 .service-img-box {
+    overflow: hidden;
      @media (min-width: 1025px) {
         width: 400px !important;
     }
@@ -130,6 +145,10 @@
     @media (min-width: 768px) {
         display: block;
         width: 100%;
+        transition-duration: $defaultDuration;
+        &:hover {
+            transform: scale(1.1);
+        }
     }
 }
 
