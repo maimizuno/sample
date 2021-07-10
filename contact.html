@@ -9,6 +9,7 @@
     <!-- CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/aos.css">
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="./images/favicon.png">
     <!-- Adobe font -->
@@ -79,7 +80,7 @@
                                 3. Inquiries received on weekends or public holidays will be addressed the following business day.
                             </p>
                         </div>
-                        <div class=agreement-checkbox>
+                        <div data-aos="fade-right" class=agreement-checkbox>
                             <input id="agreement" type="checkbox" name="checkbox">
                             <label for="agreement" class="agree">I agree with these terms</label>
                         </div>
@@ -106,7 +107,7 @@
                                 <textarea id="contact"></textarea>
                             </div>
                         </div>
-                        <div class="form-submit">
+                        <div data-aos="fade-up" class="form-submit">
                             <input class="button-submit" type="submit" value="submit">
                         </div>
                     </form>
@@ -155,6 +156,10 @@
     <!-- JS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="./js/hamburger.js"></script>
+    <script src="./js/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 
 </body>
 </html>

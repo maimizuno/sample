@@ -9,6 +9,7 @@
     <!-- CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/aos.css">
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="./images/favicon.png">
     <!-- Adobe font -->
@@ -60,7 +61,7 @@
                 <section class="sub_main_news_container">
                     <div class="box_body_scroll-area">
                         <ul class="box-news-area-container_sub">
-                            <li class="box-news-item_sub">
+                            <li data-aos="fade-down-right" class="box-news-item_sub">
                                 <a class="box-news-link_no_barba" href="#">
                                     <div class="box-news-image-area">
                                         <div class="box-news-image" style="background-image: url(./images/news1.jpg);"></div>
@@ -76,7 +77,7 @@
                                     </div>
                                 </a>
                             </li>
-                            <li class="box-news-item_sub">
+                            <li data-aos="fade-down" class="box-news-item_sub">
                                 <a class="box-news-link_no_barba" href="#">
                                     <div class="box-news-image-area">
                                         <div class="box-news-image" style="background-image: url(./images/news2.jpg);"></div>
@@ -92,7 +93,7 @@
                                     </div>
                                 </a>
                             </li>
-                            <li class="box-news-item_sub">
+                            <li data-aos="fade-down-left" class="box-news-item_sub">
                                 <a class="box-news-link_no_barba" href="#">
                                     <div class="box-news-image-area">
                                         <div class="box-news-image" style="background-image: url(./images/news3.jpg);"></div>
@@ -108,7 +109,7 @@
                                     </div>
                                 </a>
                             </li>
-                            <li class="box-news-item_sub">
+                            <li data-aos="fade-up-right" class="box-news-item_sub">
                                 <a class="box-news-link_no_barba" href="#">
                                     <div class="box-news-image-area">
                                         <div class="box-news-image" style="background-image: url(./images/news4.jpg);"></div>
@@ -124,7 +125,7 @@
                                     </div>
                                 </a>
                             </li>
-                            <li class="box-news-item_sub">
+                            <li data-aos="fade-up" class="box-news-item_sub">
                                 <a class="box-news-link_no_barba" href="#">
                                     <div class="box-news-image-area">
                                         <div class="box-news-image" style="background-image: url(./images/news5.jpg);"></div>
@@ -140,7 +141,7 @@
                                     </div>
                                 </a>
                             </li>
-                            <li class="box-news-item_sub">
+                            <li data-aos="fade-up-left" class="box-news-item_sub">
                                 <a class="box-news-link_no_barba" href="#">
                                     <div class="box-news-image-area">
                                         <div class="box-news-image" style="background-image: url(./images/news6.jpg);"></div>
@@ -225,6 +226,10 @@
     <!-- JS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="./js/hamburger.js"></script>
+    <script src="./js/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 
 </body>
 </html>

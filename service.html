@@ -9,6 +9,7 @@
     <!-- CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/aos.css">
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="./images/favicon.png"> 
     <!-- Adobe font -->
@@ -64,7 +65,7 @@
             <p class="sub_main-header-text3">  
                 Plus, we build all websites with a mobile-first mindset, since it's likely this is how more than 80% of customers will see it.        
             </p>
-            <div class="button-container-mutual">
+            <div data-aos="fade-up" class="button-container-mutual">
                 <a href="#" class="button-mutual">Our Latest Work</a>
             </div>
         </section>
@@ -74,7 +75,7 @@
                 <!-- メイン -->
                 <div class="main">
                     <div class="service-item-containter_sub">
-                        <div class="service-item_sub">
+                        <div data-aos="fade-up-right" class="service-item_sub">
                             <div class="service-body_sub">
                                 <div class="sub-service-image-area">
                                     <div class="box-news-image" style="background-image: url(./images/web.jpg);"></div>
@@ -91,7 +92,7 @@
                                 </a>
                             </div>
                         </div>
-                        <div class="service-item_sub">
+                        <div data-aos="fade-up-left" class="service-item_sub">
                             <div class="service-body_sub">
                                 <div class="sub-service-image-area">
                                     <div class="box-news-image" style="background-image: url(./images/app.jpg);"></div>
@@ -108,7 +109,7 @@
                                 </a>
                             </div>
                         </div>
-                        <div class="service-item_sub">
+                        <div data-aos="fade-up-right" class="service-item_sub">
                             <div class="service-body_sub">
                                 <div class="sub-service-image-area">
                                     <div class="box-news-image" style="background-image: url(./images/marketing.jpg);"></div>
@@ -125,7 +126,7 @@
                                 </a>
                             </div>
                         </div>
-                        <div class="service-item_sub">
+                        <div data-aos="fade-up-left" class="service-item_sub">
                             <div class="service-body_sub">
                                 <div class="sub-service-image-area">
                                     <div class="box-news-image" style="background-image: url(./images/social.jpg);"></div>
@@ -209,6 +210,10 @@
     <!-- JS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="./js/hamburger.js"></script>
+    <script src="./js/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 
 </body>
 </html>
