@@ -2179,8 +2179,8 @@ h3 {
 @media (min-width: 1025px) {
   .button-ourservices {
     padding: 2.5rem 10rem;
-    -webkit-box-shadow: 0 0 0 4px #183f6b, 0 0 0 5px #8A2DD9;
-            box-shadow: 0 0 0 4px #183f6b, 0 0 0 5px #8A2DD9;
+    -webkit-box-shadow: 0 0 0 4px #18256b, 0 0 0 5px #8A2DD9;
+            box-shadow: 0 0 0 4px #18256b, 0 0 0 5px #8A2DD9;
   }
   .button-ourservices:hover {
     -webkit-transition-duration: 0.5s;
