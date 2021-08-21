@@ -11,7 +11,7 @@ body {
   font-weight: 500;
   font-style: normal;
   letter-spacing: .07em;
-  line-height: 1.4;
+  line-height: 1.75;
   color: #e8e8e8;
   background-color: #11152C;
 }
@@ -138,7 +138,13 @@ h3 {
           box-sizing: border-box;
 }
 
-@media (min-width: 769px) {
+@media (min-width: 768px) {
+  .nav-button span {
+    font-size: 4.5rem;
+  }
+}
+
+@media (min-width: 899px) {
   .nav-button {
     display: none;
   }
@@ -174,6 +180,7 @@ h3 {
   margin: 0;
   list-style: none;
   background: -webkit-linear-gradient(0deg, #A215D6, #3273C7, #1EB98E);
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   text-transform: uppercase;
@@ -191,7 +198,7 @@ h3 {
   display: none;
 }
 
-@media (min-width: 769px) {
+@media (min-width: 900px) {
   .pc-nav {
     display: block;
   }
@@ -289,7 +296,7 @@ h3 {
   display: none;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 499px) {
   .cover-video {
     display: block;
     position: absolute;
@@ -312,7 +319,7 @@ h3 {
   height: auto;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 500px) {
   .cover-video-sp {
     display: none;
   }
@@ -372,6 +379,7 @@ h3 {
   line-height: 4rem;
   color: #48F2C3;
   background: -webkit-linear-gradient(0deg, #5815D8, #3273C7, #35BA95);
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   color: black;
@@ -485,6 +493,7 @@ h3 {
   text-transform: uppercase;
   color: #48F2C3;
   background: -webkit-linear-gradient(0deg, #5815D8, #3273C7, #35BA95);
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-color: #11152C;
@@ -496,7 +505,19 @@ h3 {
           box-sizing: border-box;
 }
 
-@media (min-width: 769px) {
+@media (max-width: 399px) {
+  .button-cover {
+    margin: 0;
+  }
+}
+
+@media (min-width: 400px) {
+  .button-cover {
+    margin-top: 2rem;
+  }
+}
+
+@media (min-width: 650px) {
   .button-cover {
     display: none;
   }
@@ -554,6 +575,7 @@ h3 {
   font-weight: 700;
   text-transform: uppercase;
   background: -webkit-linear-gradient(0deg, #5815D8, #3273C7, #35BA95);
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   opacity: 0;
@@ -629,7 +651,7 @@ h3 {
   }
 }
 
-@media (min-width: 1025px) {
+@media (min-width: 1200px) {
   .service-container {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -653,7 +675,7 @@ h3 {
           box-sizing: border-box;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 500px) {
   .service-item {
     -webkit-box-pack: end;
         -ms-flex-pack: end;
@@ -683,7 +705,7 @@ h3 {
   padding: 1rem 2rem 1rem;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 500px) {
   .service-body {
     font-size: 2rem;
     width: 530px;
@@ -1012,6 +1034,7 @@ h3 {
 }
 
 .sub_section-heading {
+  text-align: center;
   text-transform: uppercase;
   font-weight: 500;
   letter-spacing: .1em;
@@ -1072,20 +1095,26 @@ h3 {
   opacity: 0;
   -webkit-animation: fadein 4s ease forwards;
           animation: fadein 4s ease forwards;
-  -webkit-animation-delay: 1s;
-          animation-delay: 1s;
-}
-
-@keyframes fadein {
-  100% {
-    opacity: 1;
-  }
 }
 
 @media (min-width: 768px) {
   .sub_main-header {
     margin-bottom: 2rem;
   }
+}
+
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.sub_main-header.text1 {
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
 }
 
 .sub_main-header.text2 {
@@ -1238,6 +1267,18 @@ h3 {
   overflow-x: auto;
   margin: 0;
   padding: 0;
+}
+
+@media (min-width: 500px) {
+  .box-news-area-container {
+    height: 70vw;
+  }
+}
+
+@media (min-width: 600px) {
+  .box-news-area-container {
+    height: 62vw;
+  }
 }
 
 @media (min-width: 768px) {
@@ -1424,6 +1465,7 @@ h3 {
   text-transform: uppercase;
   color: #3B1BEB;
   background: -webkit-linear-gradient(0deg, #48F2C3, #22EADB, #3B1BEB);
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-color: none;
@@ -1447,6 +1489,7 @@ h3 {
     -webkit-transition-duration: 0.5s;
             transition-duration: 0.5s;
     background: -webkit-linear-gradient(45deg, #9015d8, #3273C7, #35BA95);
+    background-clip: unset;
     -webkit-background-clip: unset;
     -webkit-text-fill-color: unset;
     opacity: 90%;
@@ -1859,8 +1902,9 @@ h3 {
   margin: 0;
   font-size: 2.1rem;
   background: -webkit-linear-gradient(0deg, #5815D8, #3273C7, #35BA95);
-  -webkit-text-fill-color: transparent;
+  background-clip: text;
   -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   border: 1px solid #8A2DD9;
   border-radius: 50%;
 }
@@ -1883,6 +1927,7 @@ h3 {
     -webkit-transition-duration: 0.5s;
             transition-duration: 0.5s;
     background: -webkit-linear-gradient(45deg, #9015d8, #3273C7, #35BA95);
+    background-clip: unset;
     -webkit-background-clip: unset;
     -webkit-text-fill-color: unset;
     opacity: 90%;
@@ -1979,6 +2024,7 @@ h3 {
   text-transform: uppercase;
   color: #48F2C3;
   background: -webkit-linear-gradient(0deg, #5815D8, #3273C7, #35BA95);
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-color: #11152C;
@@ -2011,6 +2057,7 @@ h3 {
     -webkit-transition-duration: 0.5s;
             transition-duration: 0.5s;
     background: -webkit-linear-gradient(45deg, #9015d8, #3273C7, #35BA95);
+    background-clip: unset;
     -webkit-background-clip: unset;
     -webkit-text-fill-color: unset;
     opacity: 90%;
@@ -2094,6 +2141,7 @@ h3 {
 .our-services-item span {
   font-size: 5rem;
   background: -webkit-linear-gradient(45deg, #9015d8, #3273C7, #35BA95);
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -2169,6 +2217,7 @@ h3 {
   text-transform: uppercase;
   color: #48F2C3;
   background: -webkit-linear-gradient(0deg, #36c097, #22b1ea, #3B1BEB);
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-color: #11152C;
@@ -2198,6 +2247,7 @@ h3 {
     -webkit-transition-duration: 0.5s;
             transition-duration: 0.5s;
     background: -webkit-linear-gradient(45deg, #9015d8, #3273C7, #35BA95);
+    background-clip: unset;
     -webkit-background-clip: unset;
     -webkit-text-fill-color: unset;
     opacity: 90%;
@@ -2241,6 +2291,7 @@ h3 {
   text-transform: uppercase;
   color: #48F2C3;
   background: -webkit-linear-gradient(0deg, #36c097, #22b1ea, #3B1BEB);
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-color: #11152C;
@@ -2269,6 +2320,7 @@ h3 {
     -webkit-transition-duration: 0.5s;
             transition-duration: 0.5s;
     background: -webkit-linear-gradient(45deg, #9015d8, #3273C7, #35BA95);
+    background-clip: unset;
     -webkit-background-clip: unset;
     -webkit-text-fill-color: unset;
     opacity: 90%;
@@ -2331,9 +2383,7 @@ h3 {
 }
 
 .member-name {
-  padding-top: 0.5rem;
   margin: 0;
-  line-height: 1.1;
 }
 
 @media (min-width: 769px) {
@@ -2368,6 +2418,16 @@ h3 {
   }
 }
 
+.privacy-policy-textcontainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.privacy-policy-textcontainer p span {
+  margin-right: 1rem;
+}
+
 .terms-heading {
   color: #11152C;
   font-size: 1.6rem;
@@ -2380,16 +2440,6 @@ h3 {
   .terms-heading {
     font-size: 2rem;
   }
-}
-
-.privacy-policy-textcontainer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.privacy-policy-textcontainer span {
-  margin-right: 1rem;
 }
 
 .agreement-checkbox {
@@ -2491,6 +2541,7 @@ h3 {
   text-transform: uppercase;
   color: #48F2C3;
   background: -webkit-linear-gradient(0deg, #48F2C3, #22EADB, #3B1BEB);
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-color: #11152C;
@@ -2525,6 +2576,7 @@ h3 {
     -webkit-transition-duration: 0.5s;
             transition-duration: 0.5s;
     background: -webkit-linear-gradient(45deg, #9015d8, #3273C7, #35BA95);
+    background-clip: unset;
     -webkit-background-clip: unset;
     -webkit-text-fill-color: unset;
     opacity: 90%;
