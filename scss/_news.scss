@@ -65,6 +65,12 @@
     overflow-x: auto;
     margin: 0;
     padding: 0;
+    @media (min-width: 500px) {
+        height: 70vw;
+    }
+    @media (min-width: 600px) {
+        height: 62vw;
+    }
     @media (min-width: 768px) {
         width: 668px;
         height: 28vw;
@@ -198,6 +204,7 @@
     text-transform: uppercase;
     color: #3B1BEB;
     background: -webkit-linear-gradient(0deg, #48F2C3, #22EADB, #3B1BEB);
+    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-color: none;
@@ -213,6 +220,7 @@
         &:hover {
             transition-duration: $defaultDuration;
             background: -webkit-linear-gradient(45deg, #9015d8, #3273C7, #35BA95);
+            background-clip: unset;
             -webkit-background-clip: unset;
             -webkit-text-fill-color: unset;
             opacity: 90%;

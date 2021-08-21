@@ -74,12 +74,15 @@
     margin-bottom: 1.5rem;
     opacity: 0;
     animation: fadein 4s ease forwards;
-        @keyframes fadein {
-            100% {  opacity: 1;}
-        }
-    animation-delay: 1s;
     @media (min-width: 768px) {
         margin-bottom: 2rem;
+    }
+    @keyframes fadein {
+        0% {opacity: 0}
+        100% {opacity: 1;}
+    }
+    &.text1 {
+        animation-delay: 1s;
     }
     &.text2 {
         animation-delay: 1.5s;

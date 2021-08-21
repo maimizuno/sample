@@ -145,8 +145,9 @@
         margin: 0;
         font-size: 2.1rem;
         background: -webkit-linear-gradient(0deg, #5815D8, #3273C7, #35BA95);
-        -webkit-text-fill-color: transparent;
+        background-clip: text;
         -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
         border: 1px solid $purple;
         border-radius: 50%;
         &:first-child {
@@ -162,6 +163,7 @@
             &:hover {
                 transition-duration: $defaultDuration;
                 background: -webkit-linear-gradient(45deg, #9015d8, #3273C7, #35BA95);
+                background-clip: unset;
                 -webkit-background-clip: unset;
                 -webkit-text-fill-color: unset;
                 opacity: 90%;

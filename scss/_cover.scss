@@ -26,7 +26,7 @@
 
 .cover-video {
     display: none;
-    @media (min-width: 768px) {
+    @media (min-width: 499px) {
         display: block;
         position: absolute;
         top: 0;
@@ -44,7 +44,7 @@
     width: 100%;
     object-fit: contain;
     height: auto;
-    @media (min-width: 768px) {
+    @media (min-width: 500px) {
         display: none;
     }
 }
@@ -84,6 +84,7 @@
     line-height: 4rem;
     color: #48F2C3;
     background: -webkit-linear-gradient(0deg,#5815D8, #3273C7, #35BA95);
+    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     color: black;
@@ -153,6 +154,7 @@
     text-transform: uppercase;
     color: #48F2C3;
     background: -webkit-linear-gradient(0deg, #5815D8, #3273C7, #35BA95);
+    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-color: $navy;
@@ -160,8 +162,14 @@
     border-radius: 5rem;
     box-shadow: 0 0 0 4px #141630, 0 0 0 5px #8A2DD9;
     box-sizing: border-box;
-    @media (min-width: 769px) {
-        display:none;
+    @media (max-width: 399px) {
+        margin: 0;
+    }
+    @media (min-width: 400px) {
+        margin-top: 2rem;
+    }
+    @media (min-width: 650px) {
+        display: none;
     }
 }
 
@@ -195,8 +203,9 @@
     font-weight: 700;
     text-transform: uppercase;
     background: -webkit-linear-gradient(0deg, #5815D8, #3273C7, #35BA95);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     opacity: 0;
     animation: fadein 4s ease forwards;
     @keyframes fadein {
