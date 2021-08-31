@@ -1901,8 +1901,8 @@ h3 {
   height: 4rem;
   margin: 0;
   font-size: 2.1rem;
-  background: -webkit-linear-gradient(0deg, #5815D8, #3273C7, #35BA95);
-  background-clip: text;
+  background: -webkit-gradient(linear, left top, right top, from(#5815D8), color-stop(#3273C7), to(#35BA95));
+  background: linear-gradient(90deg, #5815D8, #3273C7, #35BA95);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   border: 1px solid #8A2DD9;
@@ -2540,8 +2540,8 @@ h3 {
   font-weight: 500;
   text-transform: uppercase;
   color: #48F2C3;
-  background: -webkit-linear-gradient(0deg, #48F2C3, #22EADB, #3B1BEB);
-  background-clip: text;
+  background: -webkit-gradient(linear, left top, right top, from(#48F2C3), color-stop(#22EADB), to(#3B1BEB));
+  background: linear-gradient(90deg, #48F2C3, #22EADB, #3B1BEB);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   border: 1px solid #8A2DD9;
