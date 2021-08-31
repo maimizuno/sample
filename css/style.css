@@ -1887,7 +1887,7 @@ h3 {
   }
 }
 
-.footer-sns li {
+.footer-snsItem {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1909,12 +1909,12 @@ h3 {
   border-radius: 50%;
 }
 
-.footer-sns li:first-child {
+.footer-snsItem:first-child {
   margin-right: 2rem;
 }
 
 @media (min-width: 768px) {
-  .footer-sns li {
+  .footer-snsItem {
     width: 6rem;
     height: 6rem;
     font-size: 2.8rem;
@@ -1923,7 +1923,7 @@ h3 {
 }
 
 @media (min-width: 1025px) {
-  .footer-sns li:hover {
+  .footer-snsItem:hover {
     -webkit-transition-duration: 0.5s;
             transition-duration: 0.5s;
     background: -webkit-linear-gradient(45deg, #9015d8, #3273C7, #35BA95);
@@ -2543,7 +2543,7 @@ h3 {
   background: -webkit-linear-gradient(0deg, #48F2C3, #22EADB, #3B1BEB);
   background-clip: text;
   -webkit-background-clip: text;
-  color: transparent;
+  -webkit-text-fill-color: transparent;
   border: 1px solid #8A2DD9;
   border-radius: 5rem;
   -webkit-box-shadow: 0 0 0 4px #204566b5, 0 0 0 5px #8A2DD9;
