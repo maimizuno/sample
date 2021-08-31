@@ -1904,8 +1904,6 @@ h3 {
   background: -webkit-linear-gradient(0deg, #5815D8, #3273C7, #35BA95);
   background-clip: text;
   -webkit-background-clip: text;
-  -webkit-text-emphasis-color: transparent;
-          text-emphasis-color: transparent;
   -webkit-text-fill-color: transparent;
   border: 1px solid #8A2DD9;
   border-radius: 50%;
@@ -2545,8 +2543,7 @@ h3 {
   background: -webkit-linear-gradient(0deg, #48F2C3, #22EADB, #3B1BEB);
   background-clip: text;
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-color: #11152C;
+  color: transparent;
   border: 1px solid #8A2DD9;
   border-radius: 5rem;
   -webkit-box-shadow: 0 0 0 4px #204566b5, 0 0 0 5px #8A2DD9;
