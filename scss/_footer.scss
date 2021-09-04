@@ -146,12 +146,6 @@
     height: 4rem;
     margin: 0;
     font-size: 2.1rem;
-    color: #48F2C3;
-    background: -webkit-linear-gradient(0deg, #5815D8, #3273C7, #35BA95);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-color: $navy;
     border: 1px solid $purple;
     border-radius: 50%;
     &:first-child {
@@ -164,6 +158,10 @@
         margin: 0;
     }
     @media (min-width: 1025px) {
+        background: -webkit-linear-gradient(0deg, #5815D8, #3273C7, #35BA95);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
         &:hover {
             transition-duration: $defaultDuration;
             background: -webkit-linear-gradient(45deg, #9015d8, #3273C7, #35BA95);
@@ -184,10 +182,12 @@
 
 //icons
 .icon-twitter:before {
+    color: #2375dfa6;
     content: "\e900";
 }
 
 .icon-facebook:before {
+    color: #2375dfa6;
     content: "\e902";
 }
 
