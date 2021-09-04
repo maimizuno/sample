@@ -146,7 +146,8 @@
     height: 4rem;
     margin: 0;
     font-size: 2.1rem;
-    background: linear-gradient(90deg, #5815D8, #3273C7, #35BA95);
+    background: -webkit-linear-gradient(90deg, #5815D8, #3273C7, #35BA95);
+    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     border: 1px solid $purple;
@@ -186,7 +187,18 @@
 
 .icon-facebook:before {
     content: "\e902";
-  }
+}
+
+.iphone {
+    &.icon-twitter:before {
+        color: #3273c7;
+        opacity: .9;
+    }
+    &.icon-facebook:before {
+        color: #3273c7;
+        opacity: .9;
+    }
+}
 
 
 //sub
