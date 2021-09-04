@@ -181,24 +181,26 @@
 }
 
 //icons
-.icon-twitter:before {
+.icon-twitter {
+    &:before {
     content: "\e900";
+    }
+    @media screen and (max-width: 768px) {
+        color: #3273C7;
+        opacity: 1;
+    }
 }
 
-.icon-facebook:before {
+.icon-facebook {
+    &:before {
     content: "\e902";
+    }
+    @media screen and (max-width: 768px) {
+        color: #3273C7;
+        opacity: 1;
+    }
 }
 
-.iphone {
-    &.icon-twitter:before {
-        color: #3273c7;
-        opacity: .9;
-    }
-    &.icon-facebook:before {
-        color: #3273c7;
-        opacity: .9;
-    }
-}
 
 
 //sub
