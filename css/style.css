@@ -1945,18 +1945,22 @@ h3 {
   content: "\e900";
 }
 
+@media screen and (max-width: 768px) {
+  .icon-twitter {
+    color: #3273C7;
+    opacity: 1;
+  }
+}
+
 .icon-facebook:before {
   content: "\e902";
 }
 
-.iphone.icon-twitter:before {
-  color: #3273c7;
-  opacity: .9;
-}
-
-.iphone.icon-facebook:before {
-  color: #3273c7;
-  opacity: .9;
+@media screen and (max-width: 768px) {
+  .icon-facebook {
+    color: #3273C7;
+    opacity: 1;
+  }
 }
 
 .footer-body-sub {
