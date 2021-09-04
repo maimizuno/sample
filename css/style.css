@@ -1901,10 +1901,12 @@ h3 {
   height: 4rem;
   margin: 0;
   font-size: 2.1rem;
-  background: -webkit-linear-gradient(90deg, #5815D8, #3273C7, #35BA95);
+  color: #48F2C3;
+  background: -webkit-linear-gradient(0deg, #5815D8, #3273C7, #35BA95);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  background-color: #11152C;
   border: 1px solid #8A2DD9;
   border-radius: 50%;
 }
@@ -1945,22 +1947,8 @@ h3 {
   content: "\e900";
 }
 
-@media screen and (max-width: 768px) {
-  .icon-twitter {
-    color: #3273C7;
-    opacity: 1;
-  }
-}
-
 .icon-facebook:before {
   content: "\e902";
-}
-
-@media screen and (max-width: 768px) {
-  .icon-facebook {
-    color: #3273C7;
-    opacity: 1;
-  }
 }
 
 .footer-body-sub {

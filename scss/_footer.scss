@@ -146,10 +146,12 @@
     height: 4rem;
     margin: 0;
     font-size: 2.1rem;
-    background: -webkit-linear-gradient(90deg, #5815D8, #3273C7, #35BA95);
+    color: #48F2C3;
+    background: -webkit-linear-gradient(0deg, #5815D8, #3273C7, #35BA95);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    background-color: $navy;
     border: 1px solid $purple;
     border-radius: 50%;
     &:first-child {
@@ -181,24 +183,12 @@
 }
 
 //icons
-.icon-twitter {
-    &:before {
+.icon-twitter:before {
     content: "\e900";
-    }
-    @media screen and (max-width: 768px) {
-        color: #3273C7;
-        opacity: 1;
-    }
 }
 
-.icon-facebook {
-    &:before {
+.icon-facebook:before {
     content: "\e902";
-    }
-    @media screen and (max-width: 768px) {
-        color: #3273C7;
-        opacity: 1;
-    }
 }
 
 
