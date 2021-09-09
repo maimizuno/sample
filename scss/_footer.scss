@@ -182,13 +182,17 @@
 
 //icons
 .icon-twitter:before {
-    color: #2375dfa6;
     content: "\e900";
+    @media (max-width: 1024px) {
+        color: #2375dfa6;
+    }
 }
 
 .icon-facebook:before {
-    color: #2375dfa6;
     content: "\e902";
+    @media (max-width: 1024px) {
+        color: #2375dfa6;
+    }
 }
 
 
