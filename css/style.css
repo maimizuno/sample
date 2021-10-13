@@ -181,13 +181,21 @@ h3 {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   text-transform: uppercase;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
-.sp-nav-list {
-  margin-bottom: 4rem;
+.sp-nav-container a {
+  width: 100%;
+  margin-bottom: 3rem;
 }
 
-.sp-nav-list.last-child {
+.sp-nav-container a.last-child {
   margin-bottom: 2rem;
 }
 
