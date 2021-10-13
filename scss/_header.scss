@@ -110,12 +110,14 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   text-transform: uppercase;
-}
-
-.sp-nav-list {
-  margin-bottom: 4rem;
-  &.last-child {
-    margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  a {
+    width: 100%;
+    margin-bottom: 3rem;
+    &.last-child {
+      margin-bottom: 2rem;
+    }
   }
 }
 
