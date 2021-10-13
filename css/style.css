@@ -176,8 +176,6 @@ h3 {
 }
 
 .sp-nav-container {
-  margin: 0;
-  padding: 0;
   background: -webkit-linear-gradient(0deg, #a215d6, #3273c7, #1eb98e);
   background-clip: text;
   -webkit-background-clip: text;
