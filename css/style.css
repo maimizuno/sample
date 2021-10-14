@@ -176,18 +176,29 @@ h3 {
 }
 
 .sp-nav-container {
-  background: -webkit-linear-gradient(0deg, #a215d6, #3273c7, #1eb98e);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.sp-nav-container div {
+  background: -webkit-linear-gradient(0deg, #721bd6, #3273c7, #138f6cd8);
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   text-transform: uppercase;
-}
-
-.sp-nav-container a {
-  display: block;
+  background-color: #18264e;
   margin-bottom: 3rem;
 }
 
-.sp-nav-container a.last-child {
+.sp-nav-container div.last-child {
   margin-bottom: 2rem;
 }
 
