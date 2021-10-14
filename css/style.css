@@ -189,17 +189,21 @@ h3 {
 }
 
 .sp-nav-container div {
+  margin-bottom: 3rem;
+}
+
+.sp-nav-container div.last-child {
+  margin-bottom: 2rem;
+}
+
+.sp-nav-container div a {
+  color: #48f2c3;
   background: -webkit-linear-gradient(0deg, #721bd6, #3273c7, #138f6cd8);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   text-transform: uppercase;
   background-color: #18264e;
-  margin-bottom: 3rem;
-}
-
-.sp-nav-container div.last-child {
-  margin-bottom: 2rem;
 }
 
 .pc-nav {
