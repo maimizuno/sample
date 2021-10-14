@@ -105,12 +105,16 @@
 }
 
 .sp-nav-container {
-  background: -webkit-linear-gradient(0deg, #a215d6, #3273c7, #1eb98e);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  text-transform: uppercase;
-  a {
-    display: block;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  div {
+    background: -webkit-linear-gradient(0deg, #721bd6, #3273c7, #138f6cd8);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-transform: uppercase;
+    background-color: $navy2;
     margin-bottom: 3rem;
     &.last-child {
       margin-bottom: 2rem;
