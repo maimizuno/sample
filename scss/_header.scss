@@ -1,8 +1,8 @@
 //
-// ヘッダーのスタイル
+// header
 //
 
-// ヘッダー
+// header
 .header {
   position: fixed;
   top: 0;
@@ -79,6 +79,7 @@
 
 // SP-nav
 .sp-nav {
+  width: 100%;
   position: absolute;
   top: 6rem;
   left: 0;
@@ -90,7 +91,6 @@
   );
   display: none;
   z-index: 1000;
-  width: 100%;
   padding: 8rem 4rem;
   font-family: "futura-pt", sans-serif;
   font-size: 2.6rem;
@@ -105,20 +105,22 @@
 }
 
 .sp-nav-container {
-  margin: 0;
-  padding: 0;
-  background: -webkit-linear-gradient(0deg, #a215d6, #3273c7, #1eb98e);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  text-transform: uppercase;
   display: flex;
   flex-direction: column;
-  a {
-    width: 100%;
+  align-items: center;
+  div {
     margin-bottom: 3rem;
     &.last-child {
       margin-bottom: 2rem;
+    }
+    a {
+      color: #48f2c3;
+      background: -webkit-linear-gradient(0deg, #6015d8, #3273c7, #108f7ad8);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      text-transform: uppercase;
+      background-color: $navy2;
     }
   }
 }
