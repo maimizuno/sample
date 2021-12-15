@@ -119,6 +119,12 @@ h3 {
   line-height: 2;
 }
 
+@media (min-width: 760px) {
+  .icon-menu:before {
+    font-size: 2.4rem;
+  }
+}
+
 .nav-button {
   display: -webkit-box;
   display: -ms-flexbox;
