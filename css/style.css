@@ -151,13 +151,13 @@ h3 {
 }
 
 .sp-nav {
+  width: 100%;
   position: absolute;
   top: 6rem;
   left: 0;
   background: radial-gradient(circle farthest-side at 200px 200px, #1d386f 0%, #18264e 50%, #141630 100%);
   display: none;
   z-index: 1000;
-  width: 100%;
   padding: 8rem 4rem;
   font-family: "futura-pt", sans-serif;
   font-size: 2.6rem;
@@ -176,13 +176,6 @@ h3 {
 }
 
 .sp-nav-container {
-  margin: 0;
-  padding: 0;
-  background: -webkit-linear-gradient(0deg, #a215d6, #3273c7, #1eb98e);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  text-transform: uppercase;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -190,15 +183,27 @@ h3 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.sp-nav-container a {
-  width: 100%;
+.sp-nav-container div {
   margin-bottom: 3rem;
 }
 
-.sp-nav-container a.last-child {
+.sp-nav-container div.last-child {
   margin-bottom: 2rem;
+}
+
+.sp-nav-container div a {
+  color: #48f2c3;
+  background: -webkit-linear-gradient(0deg, #6015d8, #3273c7, #108f7ad8);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-transform: uppercase;
+  background-color: #18264e;
 }
 
 .pc-nav {
@@ -1665,7 +1670,7 @@ h3 {
   padding: 3rem 2rem 2rem;
   font-size: 1.4rem;
   background-color: #11152c;
-  background: -webkit-linear-gradient(-90deg, #18264E, #11152C);
+  background: -webkit-linear-gradient(-90deg, #18264e, #11152c);
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
@@ -1927,7 +1932,7 @@ h3 {
 
 @media (min-width: 1025px) {
   .footer-snsItem {
-    background: -webkit-linear-gradient(0deg, #5815D8, #3273C7, #35BA95);
+    background: -webkit-linear-gradient(0deg, #5815d8, #3273c7, #35ba95);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -1935,7 +1940,7 @@ h3 {
   .footer-snsItem:hover {
     -webkit-transition-duration: 0.5s;
             transition-duration: 0.5s;
-    background: -webkit-linear-gradient(45deg, #9015d8, #3273C7, #35BA95);
+    background: -webkit-linear-gradient(45deg, #9015d8, #3273c7, #35ba95);
     background-clip: unset;
     -webkit-background-clip: unset;
     -webkit-text-fill-color: unset;
@@ -2118,7 +2123,7 @@ h3 {
 
 .company {
   padding: 0;
-  background: -webkit-linear-gradient(-90deg, #180a4d44, #18406F, #257388);
+  background: -webkit-linear-gradient(-90deg, #180a4d44, #18406f, #257388);
 }
 
 @media (min-width: 768px) {
@@ -2159,9 +2164,9 @@ h3 {
           box-sizing: border-box;
 }
 
-.our-services-item span {
+.our-services-item i {
   font-size: 5rem;
-  background: -webkit-linear-gradient(45deg, #9015d8, #3273C7, #35BA95);
+  background: -webkit-linear-gradient(45deg, #9015d8, #3273c7, #35ba95);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -2199,22 +2204,6 @@ h3 {
   }
 }
 
-.icon-website:before {
-  content: "\e907";
-}
-
-.icon-mobile:before {
-  content: "\e906";
-}
-
-.icon-marketing:before {
-  content: "\e904";
-}
-
-.icon-socialmedia:before {
-  content: "\e905";
-}
-
 .button-container-ourservices {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2236,16 +2225,16 @@ h3 {
   font-size: 1.7rem;
   font-weight: 500;
   text-transform: uppercase;
-  color: #48F2C3;
-  background: -webkit-linear-gradient(0deg, #36c097, #22b1ea, #3B1BEB);
+  color: #48f2c3;
+  background: -webkit-linear-gradient(0deg, #36c097, #22b1ea, #3b1beb);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-color: #11152c;
   border: 1px solid #8a2dd9;
   border-radius: 5rem;
-  -webkit-box-shadow: 0 0 0 4px #031b36ad, 0 0 0 5px #8A2DD9;
-          box-shadow: 0 0 0 4px #031b36ad, 0 0 0 5px #8A2DD9;
+  -webkit-box-shadow: 0 0 0 4px #031b36ad, 0 0 0 5px #8a2dd9;
+          box-shadow: 0 0 0 4px #031b36ad, 0 0 0 5px #8a2dd9;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   margin: 1rem 0 3rem;
@@ -2261,13 +2250,13 @@ h3 {
 @media (min-width: 1025px) {
   .button-ourservices {
     padding: 2.5rem 10rem;
-    -webkit-box-shadow: 0 0 0 4px #18256b, 0 0 0 5px #8A2DD9;
-            box-shadow: 0 0 0 4px #18256b, 0 0 0 5px #8A2DD9;
+    -webkit-box-shadow: 0 0 0 4px #18256b, 0 0 0 5px #8a2dd9;
+            box-shadow: 0 0 0 4px #18256b, 0 0 0 5px #8a2dd9;
   }
   .button-ourservices:hover {
     -webkit-transition-duration: 0.5s;
             transition-duration: 0.5s;
-    background: -webkit-linear-gradient(45deg, #9015d8, #3273C7, #35BA95);
+    background: -webkit-linear-gradient(45deg, #9015d8, #3273c7, #35ba95);
     background-clip: unset;
     -webkit-background-clip: unset;
     -webkit-text-fill-color: unset;
@@ -2310,16 +2299,16 @@ h3 {
   font-size: 1.7rem;
   font-weight: 500;
   text-transform: uppercase;
-  color: #48F2C3;
-  background: -webkit-linear-gradient(0deg, #36c097, #22b1ea, #3B1BEB);
+  color: #48f2c3;
+  background: -webkit-linear-gradient(0deg, #36c097, #22b1ea, #3b1beb);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-color: #11152c;
   border: 1px solid #8a2dd9;
   border-radius: 5rem;
-  -webkit-box-shadow: 0 0 0 4px #173561, 0 0 0 5px #8A2DD9;
-          box-shadow: 0 0 0 4px #173561, 0 0 0 5px #8A2DD9;
+  -webkit-box-shadow: 0 0 0 4px #173561, 0 0 0 5px #8a2dd9;
+          box-shadow: 0 0 0 4px #173561, 0 0 0 5px #8a2dd9;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
@@ -2334,13 +2323,13 @@ h3 {
 @media (min-width: 1025px) {
   .button-pricing {
     padding: 2.5rem 10rem;
-    -webkit-box-shadow: 0 0 0 4px #1e4974, 0 0 0 5px #8A2DD9;
-            box-shadow: 0 0 0 4px #1e4974, 0 0 0 5px #8A2DD9;
+    -webkit-box-shadow: 0 0 0 4px #1e4974, 0 0 0 5px #8a2dd9;
+            box-shadow: 0 0 0 4px #1e4974, 0 0 0 5px #8a2dd9;
   }
   .button-pricing:hover {
     -webkit-transition-duration: 0.5s;
             transition-duration: 0.5s;
-    background: -webkit-linear-gradient(45deg, #9015d8, #3273C7, #35BA95);
+    background: -webkit-linear-gradient(45deg, #9015d8, #3273c7, #35ba95);
     background-clip: unset;
     -webkit-background-clip: unset;
     -webkit-text-fill-color: unset;
@@ -2374,7 +2363,7 @@ h3 {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   margin: 0 2rem 2rem 0;
-  width: calc((100% - 2rem)/2);
+  width: calc((100% - 2rem) / 2);
 }
 
 .team-member:nth-child(even) {
